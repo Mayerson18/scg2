@@ -84,7 +84,7 @@ $(document).ready(function(){
 			var index = parseInt($(".active.center").find("img").data("index"));
 			var x = $(".active.center").find("img");
 	    var img = $(".active.center").find("img").data("img");
-			i = (index==img.length) ? 0 : index;
+			i = (index>=img.length) ? 0 : index;
 			console.log("before: " + i);
 	    var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
 	    $(x).removeClass("animated fadeOut zoomIn");
