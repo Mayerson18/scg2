@@ -88,13 +88,13 @@ $(document).ready(function(){
 			i = (index==img.length) ? 0 : index;
 			console.log("before: " + i);
 	    var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-	    $(x).removeClass("animated rotateOut zoomIn");
-	    $(x).addClass("animated rotateOut").one(animationEnd, function() {
+	    $(x).removeClass("animated fadeOut zoomIn");
+	    $(x).addClass("animated fadeOut").one(animationEnd, function() {
 	      $(this).attr("src",img[i]);
 				i++;
 				console.log("after: " + i);
 				$(".active.center").find("img").data("index",i);
-	      $(this).removeClass('rotateOut').addClass("zoomIn").one(animationEnd, function() {
+	      $(this).removeClass('fadeOut').addClass("zoomIn").one(animationEnd, function() {
 	        $(this).removeClass('animated zoomIn');
 	      });
 	    });
