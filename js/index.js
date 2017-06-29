@@ -68,8 +68,7 @@ $(document).ready(function(){
     center:true,
     nav : true,
     loop:true,
-    dots: true,
-		autoplay: true
+    dots: true
   });
 
 
@@ -78,5 +77,27 @@ $(document).ready(function(){
   $(".owl-next").text("");
 
   $(".owl-next").click();
+
+	console.log($(".active.center").text());
+	var i = 0;
+	setInterval(function(){
+
+			var index = parseInt($(".active.center").find("img").data("index"));
+			var x = $(".active.center").find("img");
+	    var img = $(".active.center").find("img").data("img");
+			i = (index==img.length) ? 0 : index;
+			console.log("before: " + i);
+	    var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+	    $(x).removeClass("animated rotateOut zoomIn");
+	    $(x).addClass("animated rotateOut").one(animationEnd, function() {
+	      $(this).attr("src",img[i]);
+				i++;
+				console.log("after: " + i);
+				$(".active.center").find("img").data("index",i);
+	      $(this).removeClass('rotateOut').addClass("zoomIn").one(animationEnd, function() {
+	        $(this).removeClass('animated zoomIn');
+	      });
+	    });
+	},5000)
 
 });
