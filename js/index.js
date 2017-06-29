@@ -81,7 +81,6 @@ $(document).ready(function(){
 	console.log($(".active.center").text());
 	var i = 0;
 	setInterval(function(){
-
 			var index = parseInt($(".active.center").find("img").data("index"));
 			var x = $(".active.center").find("img");
 	    var img = $(".active.center").find("img").data("img");
