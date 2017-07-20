@@ -123,6 +123,12 @@
   font-weight: 200;
   cursor: pointer;
 }
+.button:hover{
+  color: #ffffff;
+  font-size: 205%;
+  font-weight: 200;
+  cursor: pointer;
+}
 
 @media(max-width:768px){
   .banner-box{
