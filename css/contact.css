@@ -112,8 +112,9 @@
 }
 
 @media(max-width:568px){
+  .address{ width: 100%!important;}
   .form-contact{
-    margin-top: 160%!important;
+    margin-top: 174%!important;
     width: 88%!important;
     left: 6%!important;
     margin-bottom: 20px;
