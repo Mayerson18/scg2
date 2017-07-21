@@ -10,6 +10,23 @@ li > a{
   font-weight: 400;
 }
 
+.banner{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  position: relative;
+  align-items: flex-end;
+  background-image: url("../img/oficina3.png");
+  /* Set a specific height */
+  height: 600px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
 /* Nav / Navbar Styles
 ===================================*/
 .navbar {
@@ -131,9 +148,9 @@ nav{
 .banner-text{
   z-index: 1;
   width: 37%;
-  position: absolute;
-  left: 87px;
-  margin-top: -217px;
+  position: relative;
+  left: 1em;
+  top: -1em;
   letter-spacing: -0.6px;
   line-height: 1.05;
   color: #ffffff;
@@ -232,4 +249,19 @@ nav{
 
 .virtual{
   margin-bottom:  109px;
+}
+
+@media (max-width: 768px) {
+  .contact-body1{
+    font-size: 14px!important;
+    padding-right: 3em;
+    width: 100%!important;
+  }
+  .banner-box{
+    font-size: 12px;
+    padding-left:  0px!important;
+    padding-right: 1em;
+  }
+  .llamenos{ height: auto!important;}
+  .title-2{ font-size: 56px!important;}
 }
