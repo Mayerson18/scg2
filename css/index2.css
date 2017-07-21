@@ -85,6 +85,7 @@ nav{
  font-weight: lighter;
  line-height: 28px;
  margin-bottom: 20px;
+ text-align: justify;
 }
 
 .item-title{
@@ -131,12 +132,12 @@ nav{
   z-index: 1;
   width: 37%;
   position: absolute;
-  left: 117px;
+  left: 87px;
   margin-top: -217px;
   letter-spacing: -0.6px;
   line-height: 1.05;
   color: #ffffff;
-  font-size: 552%;
+  font-size: 452%;
   font-weight: 800;
 }
 
@@ -145,16 +146,17 @@ nav{
   margin-bottom: 57px;
   letter-spacing: -0.9px;
   color: #ffffff;
-  font-size: 23px;
+  font-size: 21px;
   font-weight: 300;
   padding-bottom: 20px!important;
+  line-height: 25px;
 
 }
 
 .in{
   position: relative;
   top: 3em;
-  left: 10px;
+  left: 7px;
 }
 
 .caja1{background-color: #43929e;background-image: url("../img/1.png");}

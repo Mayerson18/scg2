@@ -183,6 +183,7 @@
  font-size: 17px;
  font-weight: lighter;
  line-height: 28px;
+ text-align: justify;
 }
 
 .section-2{
@@ -310,6 +311,7 @@
   max-height: 240px;
   min-height: 240px;
   height: 240px;
+  text-align: justify;
 }
 .box-over-card{
   position: absolute;
